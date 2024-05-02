@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+<script>
+function checkarmstrong(){
+    
+var arm=0;
+var num=Number(document.getElementById("hey").value);
+temp=num;
+while(temp>0){
+a=temp % 10;
+temp=parseInt(temp/10);
+arm= arm+a*a*a;
+}
+if(arm==num){
+    alert("inputed value is an armstrong")
+}
+else{
+    alert("the inputed value isnt an armstrong")
+}
+}
+</script>
+<input type="text" id="hey">
+<button onclick="checkarmstrong()">Check Me </button>
+
+
+
+
+
+
+
+</body>
